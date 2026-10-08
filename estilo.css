@@ -1,0 +1,370 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+body {
+
+    margin: 0;
+
+    min-height: 100vh;
+
+    background: #080808;
+
+    color: white;
+
+}
+
+
+/* =========================
+   TELAS
+========================= */
+
+.tela {
+
+    width: 380px;
+
+    max-width: 90%;
+
+    margin: 60px auto;
+
+    padding: 30px;
+
+    background: #171717;
+
+    border-radius: 20px;
+
+    box-shadow: 0 0 25px #7e22ce;
+
+}
+
+
+h1 {
+
+    text-align: center;
+
+    color: #a855f7;
+
+}
+
+
+h2 {
+
+    color: #a855f7;
+
+}
+
+
+/* =========================
+   INPUTS
+========================= */
+
+input {
+
+    width: 100%;
+
+    padding: 14px;
+
+    margin: 8px 0;
+
+    border: 1px solid #333;
+
+    border-radius: 8px;
+
+    background: #292929;
+
+    color: white;
+
+    font-size: 16px;
+
+    outline: none;
+
+}
+
+
+input:focus {
+
+    border-color: #a855f7;
+
+    box-shadow: 0 0 7px #7e22ce;
+
+}
+
+
+/* =========================
+   BOTÕES
+========================= */
+
+button {
+
+    width: 100%;
+
+    padding: 14px;
+
+    margin-top: 10px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #7e22ce;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+}
+
+
+button:hover {
+
+    background: #9333ea;
+
+}
+
+
+.cinza {
+
+    background: #292929;
+
+}
+
+
+.cinza:hover {
+
+    background: #3b3b3b;
+
+}
+
+
+/* =========================
+   MENSAGENS
+========================= */
+
+.erro {
+
+    color: #ff5555;
+
+    text-align: center;
+
+}
+
+
+.verde {
+
+    color: #4ade80;
+
+}
+
+
+/* =========================
+   BANCO
+========================= */
+
+#banco {
+
+    min-height: 100vh;
+
+}
+
+
+header {
+
+    padding: 20px 40px;
+
+    background: #151515;
+
+    border-bottom: 2px solid #7e22ce;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+}
+
+
+header h1 {
+
+    margin: 0;
+
+}
+
+
+.sair {
+
+    width: auto;
+
+    margin: 0;
+
+    padding: 10px 20px;
+
+    background: #292929;
+
+}
+
+
+.sair:hover {
+
+    background: #dc2626;
+
+}
+
+
+/* =========================
+   CONTEÚDO
+========================= */
+
+.conteudo {
+
+    width: 90%;
+
+    max-width: 800px;
+
+    margin: 40px auto;
+
+}
+
+
+.usuario {
+
+    margin-bottom: 25px;
+
+}
+
+
+.usuario h2 {
+
+    margin-bottom: 5px;
+
+}
+
+
+.usuario p {
+
+    color: #aaa;
+
+}
+
+
+/* =========================
+   SALDO
+========================= */
+
+.saldo {
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            #581c87,
+            #111
+        );
+
+    box-shadow:
+
+        0 0 20px #581c87;
+
+    margin-bottom: 25px;
+
+}
+
+
+.saldo p {
+
+    color: #ddd;
+
+    margin-bottom: 5px;
+
+}
+
+
+.saldo h2 {
+
+    color: white;
+
+    font-size: 35px;
+
+    margin: 5px 0;
+
+}
+
+
+/* =========================
+   SAQUE
+========================= */
+
+.caixa {
+
+    background: #171717;
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+}
+
+
+.caixa h2 {
+
+    margin-top: 0;
+
+}
+
+
+#resultado {
+
+    margin-top: 20px;
+
+    padding: 15px;
+
+    line-height: 1.8;
+
+    border-radius: 10px;
+
+}
+
+
+/* =========================
+   CELULAR
+========================= */
+
+@media (max-width: 600px) {
+
+    header {
+
+        padding: 18px;
+
+    }
+
+    header h1 {
+
+        font-size: 21px;
+
+    }
+
+    .conteudo {
+
+        width: 92%;
+
+        margin: 30px auto;
+
+    }
+
+    .saldo h2 {
+
+        font-size: 28px;
+
+    }
+
+}

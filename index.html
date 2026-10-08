@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Meu Banco</title>
+
+    <link
+        rel="stylesheet"
+        href="estilo.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         LOGIN
+    ========================== -->
+
+    <div
+        id="login"
+        class="tela"
+    >
+
+        <h1>Meu Banco</h1>
+
+        <input
+            type="email"
+            id="emailLogin"
+            placeholder="E-mail"
+        >
+
+        <input
+            type="password"
+            id="senhaLogin"
+            placeholder="Senha"
+        >
+
+        <button onclick="entrar()">
+            Entrar
+        </button>
+
+        <button
+            class="cinza"
+            onclick="mostrarCadastro()"
+        >
+            Criar cadastro
+        </button>
+
+        <p
+            id="erroLogin"
+            class="erro"
+        ></p>
+
+    </div>
+
+
+    <!-- =========================
+         CADASTRO
+    ========================== -->
+
+    <div
+        id="cadastro"
+        class="tela"
+        style="display: none;"
+    >
+
+        <h1>Criar conta</h1>
+
+        <input
+            type="text"
+            id="nome"
+            placeholder="Seu nome"
+        >
+
+        <input
+            type="email"
+            id="email"
+            placeholder="Seu e-mail"
+        >
+
+        <input
+            type="password"
+            id="senha"
+            placeholder="Sua senha"
+        >
+
+        <input
+            type="password"
+            id="senha2"
+            placeholder="Confirmar senha"
+        >
+
+        <button onclick="cadastrar()">
+            Criar conta
+        </button>
+
+        <button
+            class="cinza"
+            onclick="voltarLogin()"
+        >
+            Voltar
+        </button>
+
+        <p
+            id="erroCadastro"
+            class="erro"
+        ></p>
+
+    </div>
+
+
+    <!-- =========================
+         BANCO
+    ========================== -->
+
+    <div
+        id="banco"
+        style="display: none;"
+    >
+
+        <header>
+
+            <h1>Meu Banco</h1>
+
+            <button
+                class="sair"
+                onclick="sair()"
+            >
+                Sair
+            </button>
+
+        </header>
+
+
+        <div class="conteudo">
+
+            <div class="usuario">
+
+                <h2>
+                    Olá,
+                    <span id="nomeUsuario"></span>!
+                </h2>
+
+                <p>
+                    Bem-vindo à sua conta.
+                </p>
+
+            </div>
+
+
+            <!-- SALDO -->
+
+            <div class="saldo">
+
+                <p>
+                    Saldo disponível
+                </p>
+
+                <h2>
+                    R$
+                    <span id="saldo"></span>
+                </h2>
+
+            </div>
+
+
+            <!-- SAQUE -->
+
+            <div class="caixa">
+
+                <h2>
+                    Sacar dinheiro
+                </h2>
+
+                <input
+                    type="number"
+                    id="valor"
+                    placeholder="Digite o valor"
+                >
+
+                <button onclick="sacar()">
+                    Sacar
+                </button>
+
+                <div id="resultado"></div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         CONFIRMAR SAQUE
+    ========================== -->
+
+    <div
+        id="confirmar"
+        class="tela"
+        style="display: none;"
+    >
+
+        <h1>Confirmar saque</h1>
+
+        <p>
+            Digite sua senha para confirmar.
+        </p>
+
+        <input
+            type="password"
+            id="senhaSaque"
+            placeholder="Senha"
+        >
+
+        <button onclick="confirmarSaque()">
+            Confirmar
+        </button>
+
+        <button
+            class="cinza"
+            onclick="cancelar()"
+        >
+            Cancelar
+        </button>
+
+        <p
+            id="erroSaque"
+            class="erro"
+        ></p>
+
+    </div>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
